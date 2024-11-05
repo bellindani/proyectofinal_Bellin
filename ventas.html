@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Venta</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main class="container-fluid d-flex justify-content-center align-items-center ">
+    <div class="row">
+        <div class="container mt-5 text-center">
+            <h1>Resumen de Ventas</h1>
+
+            <!-- Contenedor alertas de resultados dinámica -->
+            <div id="alertasResultados"></div>
+          <!-- Muestra alertas generales de forma dinámica --> 
+            <div id="contenedorMensajesGenerales" class="alert" style="display: none;"></div>
+
+            <div class="mb-5">
+                <label for="resumenventa" class="form-label font-weight bold">Producto</label>
+                <select id="resumenventa" class="form-select">
+                    <option value="">Seleccione el producto</option>
+                    <option value="Pagina Web Gratis">Pagina Web Gratis</option>
+                    <option value="Pagina Personalizada">Pagina Personalizada</option>
+                    <option value="Pagina Premium">Pagina Premiun</option>
+                    <option value="Todos los productos">Todos los productos</option>
+                
+                </select>
+            </div>
+            <div class="mb-5">
+                <label for="fechaVenta" class="form-label">Fecha de Venta</label>
+                <select id="fechaVenta" class="form-select">
+                    <option value="">Seleccione fecha de producto</option>
+                    <option value="Enero 2022">Enero 2022</option>
+                    <option value="Febrero 2022">Febrero 2022</option>
+                    <option value="Marzo 2022">Marzo 2022</option>
+                    <option value="Abril 2022">Abril 2022</option>
+                    <option value="Mayo 2022">Mayo 2022</option>
+                    <option value="Junio 2022">Junio 2022</option>
+                    <option value="Julio 2022">Julio 2022</option>
+                    <option value="Agosto 2022">Agosto 2022</option>
+                    <option value="Setiembre 2022">Setiembre 2022</option>
+                    <option value="Octubre 2022">Octubre 2022</option>
+                    <option value="Noviembre 2022">Noviembre 2022</option>
+                    <option value="Diciembre 2022">Diciembre 2022</option>
+                    <option value="Enero 2023">Enero 2023</option>
+                    <option value="Febrero 2023">Febrero 2023</option>
+                    <option value="Marzo 2023">Marzo 2023</option>
+                    <option value="Abril 2023">Abril 2023</option>
+                    <option value="Mayo 2023">Mayo 2023</option>
+                    <option value="Junio 2023">Junio 2023</option>
+                    <option value="Julio 2023">Julio 2023</option>
+                    <option value="Agosto 2023">Agosto 2023</option>
+                    <option value="Setiembre 2023">Setiembre 2023</option>
+                    <option value="Octubre 2023">Octubre 2023</option>
+                    <option value="Noviembre 2023">Noviembre 2023</option>
+                    <option value="Diciembre 2023">Diciembre 2023</option>
+                    <option value="Enero 2024">Enero 2024</option>
+                    <option value="Febrero 2024">Febrero 2024</option>
+                    <option value="Marzo 2024">Marzo 2024</option>
+                    <option value="Abril 2024">Abril 2024</option>
+                    <option value="Mayo 2024">Mayo 2024</option>
+                    <option value="Junio 2024">Junio 2024</option>
+                    <option value="Julio 2024">Julio 2024</option>
+                    <option value="Agosto 2024">Agosto 2024</option>
+                    <option value="Setiembre 2024">Setiembre 2024</option>
+                    <option value="Octubre 2024">Octubre 2024</option>
+                    <option value="Todos los años">Todos los años</option>
+                </select>
+            </div>
+
+            <div class="mb-5">
+
+                <button type="button" class="btn btn-primary" id="consultar">Consultar</button>
+            </div>
+
+            <!-- Canvas para gráfico -->
+            <canvas id="graficoresumendeventa" width="800" height="300"></canvas>
+        </div>
+    </div>
+</main>
+<script src="datos.js"></script>
+<script src="ventas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
